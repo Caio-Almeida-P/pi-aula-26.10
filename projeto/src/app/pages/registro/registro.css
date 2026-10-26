@@ -1,0 +1,164 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal Card */
+.register-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 51, 102, 0.12);
+    text-align: center;
+}
+
+/* Imagem da Logo */
+.logo-container img {
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* Título */
+.register-form h2 {
+    color: #0b4f8a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Campos de Entrada */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    color: #222222;
+    background-color: #f9fbfd;
+    border: 1.5px solid #cccccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #0b4f8a;
+    background-color: #ffffff;
+}
+
+/* Botão Verde Claro - Receber código de acesso */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #2ea44f; /* Verde claro vibrante */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(46, 164, 79, 0.25);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #2c974b;
+}
+
+.btn-submit:active {
+    transform: scale(0.99);
+}
+
+/* Estilo do Campo Código de Acesso */
+.code-group {
+    background-color: #f4f8fb;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #0b4f8a;
+    margin-bottom: 20px;
+}
+
+.code-group label {
+    color: #0b4f8a;
+}
+
+.code-group input {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background-color: #ffffff;
+}
+
+/* Botão Secundário para Concluir Cadastro */
+.btn-confirm {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b4f8a; /* Azul IICAT */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.btn-confirm:hover {
+    background-color: #052c50;
+}
+
+/* Link de Retorno ao Login */
+.options {
+    text-align: center;
+}
+
+.login-link {
+    color: #0b4f8a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+.login-link:hover {
+    color: #052c50;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .register-container {
+        padding: 30px 20px;
+    }
+}

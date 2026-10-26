@@ -1,1 +1,50 @@
-<p>dialogo works!</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal IICAT - Advertência</title>
+    <link rel="stylesheet" href="dialogo.css">
+</head>
+<body>
+
+    <!-- Overlay / Fundo Escurecido -->
+    <div class="dialog-overlay">
+        <!-- Caixa de Diálogo Modal -->
+        <div class="dialog-card">
+            
+            <!-- Cabeçalho com Ícone e Título -->
+            <div class="dialog-header">
+                <div class="warning-icon-wrapper">
+                    <!-- Ícone de Advertência SVG -->
+                    <svg class="warning-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L2 21H22L12 3Z" stroke="#d93025" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 10V14" stroke="#d93025" stroke-width="2.2" stroke-linecap="round"/>
+                        <circle cx="12" cy="17.5" r="1.2" fill="#d93025"/>
+                    </svg>
+                </div>
+                <h2>Advertência..!</h2>
+            </div>
+
+            <!-- Corpo da Mensagem -->
+            <div class="dialog-body">
+                <p>Dados Incorretos, tente novamente...!</p>
+            </div>
+
+            <!-- Rodapé / Ações -->
+            <div class="dialog-footer">
+                <button type="button" class="btn-ok" onclick="fecharDialogo()">OK</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function fecharDialogo() {
+            const overlay = document.querySelector('.dialog-overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

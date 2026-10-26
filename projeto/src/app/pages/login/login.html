@@ -1,1 +1,40 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal IICAT - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Logotipo -->
+        <div class="logo-container">
+            <img src="pages/images/Logo IICAT.jpg" alt="Logo IICAT - Instituto Internacional de Carreiras Acadêmicas & Tecnológicas">
+        </div>
+
+        <!-- Formulário de Login -->
+        <form class="login-form">
+            <h2>Acesso ao Portal</h2>
+
+            <div class="input-group">
+                <label for="email">E-mail ou Usuário</label>
+                <input type="text" id="email" name="email" placeholder="Digite seu e-mail ou usuário" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="options">
+                <a href="#" class="forgot-password">Preciso de uma senha</a>
+            </div>
+
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
